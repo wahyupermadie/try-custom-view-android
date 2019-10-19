@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomField">
+        <attr name="value" format="string"/>
+        <attr name="label" format="string"/>
+        <attr name="infromation" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="isRequired" format="boolean" />
+        <attr name="minLength" format="string"/>
+        <attr name="validationType" format="enum">
+            <enum name="General" value="0"/>
+            <enum name="KTP" value="1"/>
+            <enum name="Phone" value="2"/>
+            <enum name="Email" value="3"/>
+            <enum name="Dependant" value="4"/>
+            <enum name="EmployerName" value="5"/>
+            <enum name="Refferal" value="6"/>
+            <enum name="NumberOfPeople" value="7"/>
+            <enum name="HomePhone" value="8"/>
+        </attr>
+    </declare-styleable>
+</resources>
