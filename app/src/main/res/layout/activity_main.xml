@@ -16,6 +16,9 @@
         <variable
             name="dateTunggakan"
             type="String" />
+        <variable
+            name="twoway"
+            type="String" />
     </data>
     <androidx.appcompat.widget.LinearLayoutCompat
         android:orientation="vertical"
@@ -39,5 +42,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
+        <com.example.trycustomview.CustomTextField
+            android:id="@+id/ctf_tagihan"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:label="Jumlah Tagihan"
+            app:information="Masukan Jumlah Tagihan"
+            app:customTextFieldValue="@={twoway}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="CEK TAGIHAN"
+            android:id="@+id/btn_test_tagihan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

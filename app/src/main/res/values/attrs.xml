@@ -3,7 +3,7 @@
     <declare-styleable name="CustomField">
         <attr name="value" format="string"/>
         <attr name="label" format="string"/>
-        <attr name="infromation" format="string"/>
+        <attr name="information" format="string"/>
         <attr name="textColor" format="color"/>
         <attr name="isRequired" format="boolean" />
         <attr name="minLength" format="string"/>

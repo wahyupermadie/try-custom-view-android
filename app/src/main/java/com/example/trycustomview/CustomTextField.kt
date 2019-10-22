@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.LayoutInflater
+import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.LinearLayoutCompat
 import kotlinx.android.synthetic.main._custom_field.view.*
 
@@ -29,7 +30,7 @@ class CustomTextField @JvmOverloads constructor(
     private fun settingProperty(context: Context, typedArray: TypedArray) {
         val value = typedArray.getString(R.styleable.CustomField_value)
         val label = typedArray.getString(R.styleable.CustomField_label)
-        val information = typedArray.getString(R.styleable.CustomField_infromation)
+        val information = typedArray.getString(R.styleable.CustomField_information)
         val color = typedArray.getColor(R.styleable.CustomField_textColor, resources.getColor(R.color.colorPrimary))
         validationType = typedArray.getInt(R.styleable.CustomField_validationType, 0)
         minLength = typedArray.getInt(R.styleable.CustomField_minLength, 0)
@@ -51,4 +52,6 @@ class CustomTextField @JvmOverloads constructor(
     }
 
     fun getValue(): String = acet_input.text?.toString()?: ""
+
+    fun getField() : AppCompatEditText = acet_input
 }

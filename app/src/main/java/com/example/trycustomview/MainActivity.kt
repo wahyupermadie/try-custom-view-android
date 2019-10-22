@@ -19,8 +19,14 @@ class MainActivity : AppCompatActivity() {
         binding.tunggakan = "123456789"
         binding.dateCicilan = "25-11-1997"
         binding.dateTunggakan = "Lu ga ada cicilan"
+        binding.twoway = "123123123"
+        binding.lifecycleOwner = this
         binding.cpcPayout.onClickListener {
             Toast.makeText(this, cpc_payout.getTagihan(), Toast.LENGTH_LONG).show()
+        }
+
+        binding.btnTestTagihan.setOnClickListener {
+            Toast.makeText(this, binding.ctfTagihan.getValue(), Toast.LENGTH_LONG).show()
         }
     }
 }
