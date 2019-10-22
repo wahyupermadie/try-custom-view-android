@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10dp"
+    android:layout_margin="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_label_tagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="0sp"
+            android:textColor="#191919"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Total Tagihan" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_tagihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/actv_label_tagihan"
+            android:lineSpacingExtra="0sp"
+            android:textColor="#191919"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Rp 1.000.0000" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actv_label_tagihan" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:textSize="16sp"
+                android:id="@+id/actv_label_cicilan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="Cicilan Mei 2017" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.3"
+                android:layerType="software"
+                android:src="@drawable/ic_dotted" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_cicilan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Rp 1.000.0000"
+                android:textColor="#191919"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/aciv_date_icon_h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_date"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_date_cicilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="22 Mei 2019"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/aciv_date_icon_h2"
+            app:layout_constraintStart_toEndOf="@+id/aciv_date_icon_h2"
+            app:layout_constraintTop_toBottomOf="@+id/aciv_date_icon_h2" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/actv_date_cicilan" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/linearLayoutCompat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_label_tunggakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="8dp"
+                android:textStyle="bold"
+                android:text="Tunggakan"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.3"
+                android:layerType="software"
+                android:src="@drawable/ic_dotted" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/actv_tunggakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Rp 0"
+                android:textColor="#191919"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/aciv_date_icon_h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_date"
+            app:layout_constraintStart_toStartOf="@+id/linearLayoutCompat2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/actv_date_tunggakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="22 Mei 2019"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/aciv_date_icon_h3"
+            app:layout_constraintStart_toEndOf="@+id/aciv_date_icon_h3"
+            app:layout_constraintTop_toBottomOf="@+id/aciv_date_icon_h3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:text="TABEL CICILAN"
+            android:id="@+id/acb_btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aciv_date_icon_h3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

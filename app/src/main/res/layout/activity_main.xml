@@ -1,34 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <com.example.trycustomview.CustomTextField
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:id="@+id/ctv_test"
+<layout>
+    <data>
+        <variable
+            name="tagihan"
+            type="String" />
+        <variable
+            name="cicilan"
+            type="String" />
+        <variable
+            name="tunggakan"
+            type="String" />
+        <variable
+            name="dateCicilan"
+            type="String" />
+        <variable
+            name="dateTunggakan"
+            type="String" />
+    </data>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:label="Nama Tempat Kerja"
-        app:textColor="#000000"
-        app:value="500.000"
-        app:infromation="Contoh : PT Bank Amar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:text="GET VALUE"
-        android:id="@+id/btn_testing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        <com.example.trycustomview.CustomPayoutComponent
+            android:id="@+id/cpc_payout"
+            app:tagihanLabel="Tagihan Lu"
+            app:setTagihan="@{tagihan}"
+            app:cicilanLabel="Cicilan September 2019"
+            app:setCicilan="@{cicilan}"
+            app:setCicilanDate="@{dateCicilan}"
+            app:tunggakanLabel="Tunggakan Lu"
+            app:setTunggakan="@{tunggakan}"
+            app:setTunggakanDate="@{dateTunggakan}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

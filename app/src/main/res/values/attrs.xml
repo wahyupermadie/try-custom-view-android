@@ -19,4 +19,15 @@
             <enum name="HomePhone" value="8"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="CustomPayoutComponent">
+        <attr name="tagihanLabel" format="string"/>
+        <attr name="tagihan" format="string"/>
+        <attr name="cicilanLabel" format="string"/>
+        <attr name="cicilan" format="string"/>
+        <attr name="dateCicilan" format="string" />
+        <attr name="tunggakanLabel" format="string"/>
+        <attr name="tunggakan" format="string" />
+        <attr name="dateTunggakan" format="string" />
+    </declare-styleable>
 </resources>
